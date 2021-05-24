@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Newsreader', serif;
+	font-size: 16px;
+    background-color:#202020;
+    margin: 0;
+    padding: 0;
+	color: #fff;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+header {
+	width: 100%;
+	padding: 0 20px;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	background-color: #202020;
+    border-bottom: dashed 1px yellow;
+	justify-content: space-between;
+	align-items: flex-end;
+
+}
+
+header .menu li {
+	list-style: none;
+}
+
+header .menu li ul {
+	display: inline;
+}
+
+header .menu li ul a {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.terminos {
+	color: #fff;
+	text-decoration: none;
+}
+
+.terminos:hover{
+	text-decoration: underline;
+	color: #fff;
+}
+
+header .menu li ul .activo{
+	text-decoration: underline;
+}
+
+header .menu li ul a:hover {
+	text-decoration: underline;
+	color: yellow;
+}
+
+header .menu li ul a:active {
+	color: #E55812;
+}
+
+header .textos {
+	color: #fff;
+	font-family: 'Mate SC', serif;
+}
+
+header .textos .nombre {
+	font-size: 35px;
+	font-weight: 600;
+    display: inline;
+}
+
+header .textos h2 {
+	font-weight: 300;
+	font-size: 15px;
+	font-style: italic;
+    display: inline;
+    margin-left: 5px;
+}
+
+.columna img {
+    width: 100%;
+    margin-top: 5px;
+    opacity: .7;
+}
+
+.columna img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.galeria{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    border-bottom: dashed 1px yellow;
+}
+
+.columna{
+    flex: 25%;
+    padding: 5px;
+}
+
+.ubicacion {
+	padding: 10px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-bottom: dashed 1px yellow;
+}
+
+.titulo {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+    margin-top: 10px;
+	margin-bottom: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.ubicacion .titulo {
+	margin-top: 0;
+}
+
+.ubicacion .direccion, .ubicacion .contacto, .ubicacion .horarios {
+	width: 30%;
+	text-align: center;
+	background-color: rgba(255,255,255, 0.1);
+}
+
+.ubicacion .direccion .calle {
+    color: #000;
+	font-weight: bold;
+}
+
+.ubicacion .contacto .telefono, .ubicacion .contacto .mail {
+    color: #000;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+
+.ubicacion h4 {
+	text-align: center;
+	margin-bottom: 20px;
+    color: #000;
+	padding-top: 10px;
+}
+
+.ubicacion .horarios .entre-semana,
+.ubicacion .horarios .fin-semana {
+	width: 50%;
+	float: left;
+	text-align: center;
+    color: #000;
+	font-weight: bold;
+}
+
+.nosotros{
+	border-bottom: dashed 1px yellow;
+}
+
+.miembro, .miembro_reves{
+	margin: 20px 25px;
+	display: flex;
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	background-color: rgba(255,255,255,0.1);
+	color: #000;
+}
+
+.miembro_texto h4{
+	font-size: 30px;
+	font-weight:normal;
+}
+
+.miembro_texto p{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.miembro_reves{
+	flex-direction: row-reverse;
+}
+
+.miembro_reves .miembro_texto{
+	padding-left: 15px;
+}
+
+.miembro .miembro_texto{
+	padding-right: 15px;
+}
+
+.miembro_imagen{
+	min-width: 150px;
+}
+
+.miembro_imagen img{
+	vertical-align: top;
+	width: 100%;
+	border: solid 1px black;
+}
+
+.mapa {
+	margin-top: 20px;
+	width: 90%;
+}
+
+.mapa iframe {
+	width: 100%;
+}
+
+footer{
+	padding: 5px 20px;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+footer .redes_sociales a{
+	color: #fff;
+	text-decoration: underline;
+	margin-left: 20px;
+}
+
+footer .redes_sociales a i{
+margin-right: 2px;
+}
+
+footer .redes_sociales a:hover{
+	text-decoration: none;
+}
+
+.footer_contacto{
+	border-top: dashed 1px yellow;
+}
+
+.terminos_condiciones{
+	margin: 10px 10px;
+}
+
+@media screen and (max-width: 800px){
+    .columna{
+        flex: 50%;
+    } 
+
+	.miembro_texto h4{
+		font-size: 25px;
+		font-weight:normal;
+	}
+	
+	.miembro_texto p{
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	header{
+		flex-direction: column;
+		align-items: center;
+		height: 100px;
+	}
+
+	header .menu li ul {
+		padding-left: 5px;
+		padding-bottom: 5px;
+	}
+
+	header .textos{
+		padding-bottom: 15px;
+		padding-top: 20px;
+	}
+
+	.ubicacion {
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.ubicacion .direccion, .ubicacion .contacto, .ubicacion .horarios {
+		margin: 10px 0;
+		width: 60%;
+	}
+}
+@media (max-width: 600px){
+    .columna{
+        flex: 100%;
+    }
+
+	.miembro_texto h4{
+		font-size: 25px;
+		font-weight:normal;
+	}
+	
+	.miembro_texto p{
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	header{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .autor{
+		order: 2;
+	}
+
+	footer .autor p{
+		margin-bottom: 5px;
+	}
+
+	footer .redes_sociales{
+		order: 1;
+		margin-bottom: 5px;
+	}
+}
