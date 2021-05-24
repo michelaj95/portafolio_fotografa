@@ -312,11 +312,6 @@ footer .redes_sociales a:hover{
 		font-weight: bold;
 	}
 
-	header{
-		flex-direction: column;
-		align-items: center;
-	}
-
 	footer{
 		flex-direction: column;
 		align-items: center;
@@ -333,5 +328,11 @@ footer .redes_sociales a:hover{
 	footer .redes_sociales{
 		order: 1;
 		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: 400px){
+	header{
+		height: 125px;
 	}
 }
